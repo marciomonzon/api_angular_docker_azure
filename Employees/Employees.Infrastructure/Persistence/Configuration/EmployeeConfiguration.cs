@@ -13,22 +13,27 @@ namespace Employees.Infrastructure.Persistence.Configuration
                    .ValueGeneratedOnAdd();
 
             builder.Property(x => x.Name)
+                .HasColumnType("varchar")
                 .IsRequired()
                 .HasMaxLength(100);
 
             builder.Property(x => x.Salary)
-                .IsRequired();
+                   .IsRequired()
+                   .HasPrecision(12, 2);
 
             builder.Property(x => x.DateStartCompany)
                 .IsRequired();
 
             builder.Property(x => x.DateCreated)
-                .ValueGeneratedOnAdd()
+                .HasDefaultValueSql("GETDATE()")
                 .IsRequired();
 
             builder.Property(x => x.Ocuppation)
+                .HasColumnType("varchar")
                 .IsRequired()
                 .HasMaxLength(100);
+
+            builder.HasQueryFilter(x => !x.IsDeleted);
         }
     }
 }

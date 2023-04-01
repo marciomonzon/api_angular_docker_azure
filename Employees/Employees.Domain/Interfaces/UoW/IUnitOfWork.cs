@@ -1,4 +1,4 @@
-﻿namespace Employees.Domain.Interfaces
+﻿namespace Employees.Domain.Interfaces.UoW
 {
     public interface IUnitOfWork : IDisposable
     {

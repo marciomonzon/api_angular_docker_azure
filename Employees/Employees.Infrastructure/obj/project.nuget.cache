@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "a6UartQSAhrqNDX4g6KCxPWqOlJmIsNrGuRdMF3xX81G4lhbVOHTN1HthK59MFHFZoGjJjCOvbMl/dvECkOtGw==",
+  "dgSpecHash": "bZrZNS++RiQMsH3au+6szyV5KNhyUBQAPOnV9F2o2ZhAug98xXe1xPDQnc91Ti6A68tN4qaf4dZsd4y2xujk2Q==",
   "success": true,
   "projectFilePath": "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Infrastructure\\Employees.Infrastructure.csproj",
   "expectedPackageFiles": [

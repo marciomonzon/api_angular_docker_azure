@@ -1,13 +1,14 @@
 ﻿using Employees.Domain.Interfaces;
+using Employees.Domain.Interfaces.UoW;
 
 namespace Employees.Infrastructure.Persistence.UoW
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly ApplicationContext _context;
+        private readonly ApplicationDbContext _context;
         public IEmployeeRepository EmployeeRepository { get; }
 
-        public UnitOfWork(ApplicationContext context, IEmployeeRepository employeeRepository)
+        public UnitOfWork(ApplicationDbContext context, IEmployeeRepository employeeRepository)
         {
             _context = context;
             EmployeeRepository = employeeRepository;

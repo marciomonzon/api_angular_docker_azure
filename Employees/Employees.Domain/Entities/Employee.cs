@@ -9,6 +9,7 @@
         public DateTime DateStartCompany { get; private set; }
         public DateTime DateCreated { get; private set; }
         public DateTime? DateLeftCompnay { get; private set; }
+        public bool IsDeleted { get; private set; }
 
         public Employee(string name,
                         string ocuppation,
