@@ -1,0 +1,17 @@
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\bin\Debug\net7.0\Employees.Infrastructure.deps.json
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\bin\Debug\net7.0\Employees.Infrastructure.runtimeconfig.json
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\bin\Debug\net7.0\Employees.Infrastructure.dll
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\bin\Debug\net7.0\Employees.Infrastructure.pdb
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\bin\Debug\net7.0\Employees.Domain.dll
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\bin\Debug\net7.0\Employees.Domain.pdb
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\obj\Debug\net7.0\Employees.Infrastructure.csproj.AssemblyReference.cache
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\obj\Debug\net7.0\Employees.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\obj\Debug\net7.0\Employees.Infrastructure.AssemblyInfoInputs.cache
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\obj\Debug\net7.0\Employees.Infrastructure.AssemblyInfo.cs
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\obj\Debug\net7.0\Employees.Infrastructure.csproj.CoreCompileInputs.cache
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\obj\Debug\net7.0\Employees.Infrastructure.csproj.CopyComplete
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\obj\Debug\net7.0\Employees.Infrastructure.dll
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\obj\Debug\net7.0\refint\Employees.Infrastructure.dll
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\obj\Debug\net7.0\Employees.Infrastructure.pdb
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\obj\Debug\net7.0\Employees.Infrastructure.genruntimeconfig.cache
+D:\projetos\api_angular_docker_azure\Employees\Employees.Infrastructure\obj\Debug\net7.0\ref\Employees.Infrastructure.dll

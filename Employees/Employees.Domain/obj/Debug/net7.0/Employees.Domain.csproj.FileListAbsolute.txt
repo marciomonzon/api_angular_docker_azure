@@ -1,0 +1,12 @@
+D:\projetos\api_angular_docker_azure\Employees\Employees.Domain\bin\Debug\net7.0\Employees.Domain.deps.json
+D:\projetos\api_angular_docker_azure\Employees\Employees.Domain\bin\Debug\net7.0\Employees.Domain.dll
+D:\projetos\api_angular_docker_azure\Employees\Employees.Domain\bin\Debug\net7.0\Employees.Domain.pdb
+D:\projetos\api_angular_docker_azure\Employees\Employees.Domain\obj\Debug\net7.0\Employees.Domain.csproj.AssemblyReference.cache
+D:\projetos\api_angular_docker_azure\Employees\Employees.Domain\obj\Debug\net7.0\Employees.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\projetos\api_angular_docker_azure\Employees\Employees.Domain\obj\Debug\net7.0\Employees.Domain.AssemblyInfoInputs.cache
+D:\projetos\api_angular_docker_azure\Employees\Employees.Domain\obj\Debug\net7.0\Employees.Domain.AssemblyInfo.cs
+D:\projetos\api_angular_docker_azure\Employees\Employees.Domain\obj\Debug\net7.0\Employees.Domain.csproj.CoreCompileInputs.cache
+D:\projetos\api_angular_docker_azure\Employees\Employees.Domain\obj\Debug\net7.0\Employees.Domain.dll
+D:\projetos\api_angular_docker_azure\Employees\Employees.Domain\obj\Debug\net7.0\refint\Employees.Domain.dll
+D:\projetos\api_angular_docker_azure\Employees\Employees.Domain\obj\Debug\net7.0\Employees.Domain.pdb
+D:\projetos\api_angular_docker_azure\Employees\Employees.Domain\obj\Debug\net7.0\ref\Employees.Domain.dll

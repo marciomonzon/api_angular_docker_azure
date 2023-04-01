@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HfeCWRnRNXzuh2ggJFa7gsxPgcRg2Pmz5bhVLwIcFdESGKysHZOkjmfhMULJ/mZ5hRZoseK0VVM+ddDlnUGY4Q==",
+  "dgSpecHash": "YShXCNBZzWzJqoOhvdR2VuCRCjGHFFmxy7Dum9wAPxdhkoQ3TSWoaypj+N0JBgkMB9NuwyOEAX2pnEW5B7CLjw==",
   "success": true,
-  "projectFilePath": "D:\\projetos\\azure-ad-api\\Employees\\Employees.Api\\Employees.Api.csproj",
+  "projectFilePath": "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Api\\Employees.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

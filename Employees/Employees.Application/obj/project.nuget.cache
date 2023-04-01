@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BtZVClyZS8r3U5rrqkd67JhMjZ7DIXApdox6M1JbobaurowCO0ZICie3GYlqKKULQUk3yitszv7u7VEzZAGVlQ==",
+  "dgSpecHash": "rgb2JLw3XTarKdswoAB7TM7/j9oiNU6Tii7F/p4BEqt2sC0r4OtxYPV6XCKVtNXWvtLxXj9c+OW1qx7zpIw2KQ==",
   "success": true,
-  "projectFilePath": "D:\\projetos\\azure-ad-api\\Employees\\Employees.Application\\Employees.Application.csproj",
+  "projectFilePath": "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Application\\Employees.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

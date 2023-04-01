@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projetos\\azure-ad-api\\Employees\\Employees.Application\\Employees.Application.csproj",
+      "projectUniqueName": "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Application\\Employees.Application.csproj",
       "projectName": "Employees.Application",
-      "projectPath": "D:\\projetos\\azure-ad-api\\Employees\\Employees.Application\\Employees.Application.csproj",
+      "projectPath": "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Application\\Employees.Application.csproj",
       "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-      "outputPath": "D:\\projetos\\azure-ad-api\\Employees\\Employees.Application\\obj\\",
+      "outputPath": "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",

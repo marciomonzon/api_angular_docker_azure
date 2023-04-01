@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qyl7N2gP5qEabn8O1WhCVvfiltpZaRJkzUZbXRpu7Ck6mFxbRs4YEtzKU5VTBZ0cxZf3me/xt40k/sklIFpCOw==",
+  "dgSpecHash": "oXN3TkrBsghXTLVufHGz6qGdl6JXDulbUylzO7dVgfvDNhDEX0O1iy2GkKl5/dZZODpAaibhNTMs4frlA/g3qQ==",
   "success": true,
-  "projectFilePath": "D:\\projetos\\azure-ad-api\\Employees\\Domain.Tests\\Domain.Tests.csproj",
+  "projectFilePath": "D:\\projetos\\api_angular_docker_azure\\Employees\\Domain.Tests\\Domain.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marci\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.codecoverage\\17.3.2\\microsoft.codecoverage.17.3.2.nupkg.sha512",

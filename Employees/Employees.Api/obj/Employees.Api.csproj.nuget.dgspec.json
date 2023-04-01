@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projetos\\azure-ad-api\\Employees\\Employees.Api\\Employees.Api.csproj": {}
+    "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Api\\Employees.Api.csproj": {}
   },
   "projects": {
-    "D:\\projetos\\azure-ad-api\\Employees\\Employees.Api\\Employees.Api.csproj": {
+    "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Api\\Employees.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projetos\\azure-ad-api\\Employees\\Employees.Api\\Employees.Api.csproj",
+        "projectUniqueName": "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Api\\Employees.Api.csproj",
         "projectName": "Employees.Api",
-        "projectPath": "D:\\projetos\\azure-ad-api\\Employees\\Employees.Api\\Employees.Api.csproj",
+        "projectPath": "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Api\\Employees.Api.csproj",
         "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "D:\\projetos\\azure-ad-api\\Employees\\Employees.Api\\obj\\",
+        "outputPath": "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
