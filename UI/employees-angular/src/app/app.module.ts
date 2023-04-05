@@ -17,13 +17,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { EmployeesComponent } from './employees/employees.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DefaultComponent,
     DashboardComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
