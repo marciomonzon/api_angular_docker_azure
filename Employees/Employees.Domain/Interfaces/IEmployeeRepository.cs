@@ -4,9 +4,9 @@ namespace Employees.Domain.Interfaces
 {
     public interface IEmployeeRepository
     {
-        Task<bool> AddAsync(Employee employee);
-        Task<bool> UpdateAsync(Employee employee);
-        Task<bool> DeleteAsync(int id);
+        Task AddAsync(Employee employee);
+        void Update(Employee employee);
+        void Delete(Employee employee);
         Task<Employee> GetByIdAsync(int id);
         Task<List<Employee>> GetEmployeesAsync();
     }

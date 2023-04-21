@@ -3,8 +3,8 @@
     public interface IUnitOfWork : IDisposable
     {
         IEmployeeRepository EmployeeRepository { get; }
-        Task<int> CommmitAsync();
-        int Commit();
+        Task<bool> CommitAsync();
+        bool Commit();
         void RollBack();
     }
 }

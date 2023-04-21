@@ -1,38 +1,43 @@
 ﻿using Employees.Domain.Entities;
 using Employees.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Employees.Infrastructure.Persistence.Repositories
 {
     public class EmployeeRepository : IEmployeeRepository
     {
-        public Task<bool> AddAsync(Employee employee)
+        private readonly ApplicationDbContext _context;
+
+        public EmployeeRepository(ApplicationDbContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public Task<bool> DeleteAsync(int id)
+        public async Task AddAsync(Employee employee)
         {
-            throw new NotImplementedException();
+            await _context.Employees.AddAsync(employee);
         }
 
-        public Task<Employee> GetByIdAsync(int id)
+        public void Update(Employee employee)
         {
-            throw new NotImplementedException();
+            _context.Entry(employee).CurrentValues.SetValues(employee);
         }
 
-        public Task<List<Employee>> GetEmployeesAsync()
+        public async Task<Employee> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Employees.FindAsync(id);
         }
 
-        public Task<bool> UpdateAsync(Employee employee)
+        public async Task<List<Employee>> GetEmployeesAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Employees
+                                 .AsNoTracking()
+                                 .ToListAsync();
+        }
+
+        public void Delete(Employee employee)
+        {
+            _context.Entry(employee).State = EntityState.Deleted;
         }
     }
 }

@@ -8,20 +8,21 @@ namespace Employees.Infrastructure.Persistence.UoW
         private readonly ApplicationDbContext _context;
         public IEmployeeRepository EmployeeRepository { get; }
 
-        public UnitOfWork(ApplicationDbContext context, IEmployeeRepository employeeRepository)
+        public UnitOfWork(ApplicationDbContext context,
+                          IEmployeeRepository employeeRepository)
         {
             _context = context;
             EmployeeRepository = employeeRepository;
         }
 
-        public async Task<int> CommmitAsync()
+        public async Task<bool> CommitAsync()
         {
-            return await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync() > 0;
         }
 
-        public int Commit()
+        public bool Commit()
         {
-            return _context.SaveChanges();
+            return _context.SaveChanges() > 0;
         }
 
         public void RollBack()

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rgb2JLw3XTarKdswoAB7TM7/j9oiNU6Tii7F/p4BEqt2sC0r4OtxYPV6XCKVtNXWvtLxXj9c+OW1qx7zpIw2KQ==",
+  "dgSpecHash": "Wj+OcSiMIh5H/fdE5nF36DkYuwP7COQZs8z1s66NPZYNGKTOqD/licOzlyXu/400W5wxnU5wYesNWCuUIJfn1g==",
   "success": true,
   "projectFilePath": "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Application\\Employees.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\marci\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

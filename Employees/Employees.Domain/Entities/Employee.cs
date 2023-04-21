@@ -21,5 +21,14 @@
             Salary = salary;
             DateStartCompany = dateStartCompany;
         }
+
+        public void UpdateEmployee(string name,
+                                   string ocuppation,
+                                   decimal salary)
+        {
+            Name = name;
+            Ocuppation = ocuppation;
+            Salary = salary;
+        }
     }
 }
