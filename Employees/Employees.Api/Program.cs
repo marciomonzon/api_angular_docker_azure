@@ -30,11 +30,6 @@ namespace Employees.Api
             builder.Services.AddScoped<NotificationContext>();
             builder.Services.AddMvc(options => options.Filters.Add<NotificationFilter>());
 
-            //builder.Services.AddControllers(config =>
-            //{
-            //    config.Filters.Add<NotificationFilter>();
-            //});
-
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

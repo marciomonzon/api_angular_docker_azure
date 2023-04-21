@@ -1,5 +1,6 @@
 ﻿using Employees.Application.Dto.Input;
 using Employees.Application.Dto.View;
+using Employees.Application.Exceptions;
 using Employees.Application.Services.Interfaces;
 using Employees.Domain.Entities;
 using Employees.Domain.Interfaces.UoW;
@@ -40,7 +41,7 @@ namespace Employees.Application.Services
             var employee = await _unitOfWork.EmployeeRepository.GetByIdAsync(id);
 
             if (employee == null)
-                throw new Exception("Employee not found!");
+                throw new NotFoundException("Employee not found!");
 
             return new EmployeeViewDto
             {
@@ -59,7 +60,7 @@ namespace Employees.Application.Services
             var employees = await _unitOfWork.EmployeeRepository.GetEmployeesAsync();
 
             if (employees == null)
-                throw new Exception("Employee not found!");
+                throw new NotFoundException("Employee not found!");
 
             return (from employee in employees
                     select new EmployeeViewDto
@@ -79,11 +80,17 @@ namespace Employees.Application.Services
             var employee = await _unitOfWork.EmployeeRepository.GetByIdAsync(id);
 
             if (employee == null)
-                throw new Exception("Employee not found!");
+                throw new NotFoundException("Employee not found!");
 
             employee.UpdateEmployee(input.Name,
                                     input.Ocuppation,
                                     input.Salary);
+
+            if (employee.Invalid)
+            {
+                _notificationContext.AddNotifications(employee.ValidationResult);
+                return false;
+            }
 
             _unitOfWork.EmployeeRepository.Update(employee);
             return await _unitOfWork.CommitAsync();
@@ -94,7 +101,7 @@ namespace Employees.Application.Services
             var employee = await _unitOfWork.EmployeeRepository.GetByIdAsync(id);
 
             if (employee == null)
-                throw new Exception("Employee not found!");
+                throw new NotFoundException("Employee not found!");
 
             _unitOfWork.EmployeeRepository.Delete(employee);
             return await _unitOfWork.CommitAsync();

@@ -32,6 +32,8 @@ namespace Employees.Domain.Entities
             Name = name;
             Ocuppation = ocuppation;
             Salary = salary;
+
+            Validate(this, new EmployeeValidator());
         }
     }
 }
