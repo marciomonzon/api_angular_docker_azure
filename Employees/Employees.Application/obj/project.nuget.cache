@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Wj+OcSiMIh5H/fdE5nF36DkYuwP7COQZs8z1s66NPZYNGKTOqD/licOzlyXu/400W5wxnU5wYesNWCuUIJfn1g==",
+  "dgSpecHash": "6Ep7czR64qgfpijMcQryZvN7qAC9gXoWIq0jKcSBthnO2dOSvG87F48aMVW98P637LtvF0W4yN+rTnxRjZLWDg==",
   "success": true,
   "projectFilePath": "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Application\\Employees.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\marci\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
   "logs": []

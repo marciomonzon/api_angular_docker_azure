@@ -3,15 +3,18 @@ using Employees.Application.Dto.View;
 using Employees.Application.Services.Interfaces;
 using Employees.Domain.Entities;
 using Employees.Domain.Interfaces.UoW;
+using Employees.Domain.Shared;
 
 namespace Employees.Application.Services
 {
     public class EmployeeService : IEmployeeService
     {
+        private readonly NotificationContext _notificationContext;
         private readonly IUnitOfWork _unitOfWork;
 
-        public EmployeeService(IUnitOfWork unitOfWork)
+        public EmployeeService(NotificationContext notificationContext, IUnitOfWork unitOfWork)
         {
+            _notificationContext = notificationContext;
             _unitOfWork = unitOfWork;
         }
 
@@ -21,6 +24,12 @@ namespace Employees.Application.Services
                                        employee.Ocuppation,
                                        employee.Salary,
                                        employee.DateStartCompany);
+
+            if (entitie.Invalid)
+            {
+                _notificationContext.AddNotifications(entitie.ValidationResult);
+                return false;
+            }
 
             await _unitOfWork.EmployeeRepository.AddAsync(entitie);
             return await _unitOfWork.CommitAsync();

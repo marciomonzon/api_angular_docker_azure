@@ -1,7 +1,6 @@
 ﻿using Employees.Application.Dto.Input;
 using Employees.Application.Services.Interfaces;
 using Employees.Domain.Entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Employees.Api.Controllers
@@ -17,7 +16,6 @@ namespace Employees.Api.Controllers
             _employeeService = employeeService;
         }
 
-        // GET: api/employees
         [HttpGet("get-all-employees")]
         public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
         {
@@ -25,7 +23,6 @@ namespace Employees.Api.Controllers
             return Ok(employees);
         }
 
-        // GET: api/employees/5
         [HttpGet("get-employee/{id}")]
         public async Task<ActionResult<Employee>> GetEmployee(int id)
         {

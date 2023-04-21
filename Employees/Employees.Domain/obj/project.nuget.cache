@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "V29Xe9RnAD6JVTHRa2HuN4NWozJp4/u1dVmZO4X6FRvxmA3O5zihGH3Wka5LjgnzQb24I/D4zHzOkSpA61KPtQ==",
+  "dgSpecHash": "druE8jU1gRL2AU25h/+l45On08kDjfXdOl4CXLchgK/UpKAwGUUytbBKMnz5EqB7pj+ANoBjijMlKw3iU4n9KA==",
   "success": true,
   "projectFilePath": "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Domain\\Employees.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\marci\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512"
+  ],
   "logs": []
 }

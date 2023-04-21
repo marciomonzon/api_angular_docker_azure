@@ -1,7 +1,10 @@
 
+using Employees.Api.Filters;
 using Employees.Application;
+using Employees.Domain.Shared;
 using Employees.Infrastructure;
 using Employees.Infrastructure.Persistence;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -23,6 +26,14 @@ namespace Employees.Api
             ConfigurationManager configuration = builder.Configuration;
             builder.Services.RegisterInfrastrucutreModule(configuration);
             builder.Services.RegisterApplicationModule();
+
+            builder.Services.AddScoped<NotificationContext>();
+            builder.Services.AddMvc(options => options.Filters.Add<NotificationFilter>());
+
+            //builder.Services.AddControllers(config =>
+            //{
+            //    config.Filters.Add<NotificationFilter>();
+            //});
 
             var app = builder.Build();
 

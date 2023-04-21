@@ -1,8 +1,9 @@
-﻿namespace Employees.Domain.Entities
+﻿using Employees.Domain.Shared;
+
+namespace Employees.Domain.Entities
 {
-    public class Employee
+    public class Employee : Entity
     {
-        public int Id { get; private set; }
         public string Name { get; private set; }
         public string Ocuppation { get; private set; }
         public decimal Salary { get; private set; }
@@ -20,6 +21,8 @@
             Ocuppation = ocuppation.ToUpperInvariant();
             Salary = salary;
             DateStartCompany = dateStartCompany;
+
+            Validate(this, new EmployeeValidator());
         }
 
         public void UpdateEmployee(string name,

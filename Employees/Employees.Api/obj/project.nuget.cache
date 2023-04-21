@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "QqymKyPmm6iMFWGMX17rHJClsegO7iXQUHWe5bNpFA6WWFJA5lvKOnDHHsLVCgpN4UXhE8bmktaHy8jfRWIlhA==",
+  "dgSpecHash": "FWoOGOMuEqYIqk6uLcP2sQpYkm/ZBAdGPnVUhHhEHwzRk0c3KXOtN4CzKridi32gNneSNMRv21mz2gd5B8EYHg==",
   "success": true,
   "projectFilePath": "D:\\projetos\\api_angular_docker_azure\\Employees\\Employees.Api\\Employees.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marci\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\marci\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
