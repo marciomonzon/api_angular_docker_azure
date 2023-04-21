@@ -16,8 +16,8 @@
                         decimal salary,
                         DateTime dateStartCompany)
         {
-            Name = name;
-            Ocuppation = ocuppation;
+            Name = name.ToUpperInvariant();
+            Ocuppation = ocuppation.ToUpperInvariant();
             Salary = salary;
             DateStartCompany = dateStartCompany;
         }
