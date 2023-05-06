@@ -1,4 +1,4 @@
-﻿using Employees.Domain.Entities;
+﻿using Employees.Domain.Entities.AggregateEmployee;
 
 namespace Employees.Domain.Interfaces
 {

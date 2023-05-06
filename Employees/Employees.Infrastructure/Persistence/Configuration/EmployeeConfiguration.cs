@@ -1,4 +1,4 @@
-﻿using Employees.Domain.Entities;
+﻿using Employees.Domain.Entities.AggregateEmployee;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -28,12 +28,11 @@ namespace Employees.Infrastructure.Persistence.Configuration
                 .HasDefaultValueSql("GETDATE()")
                 .IsRequired();
 
-            builder.Property(x => x.Ocuppation)
-                .HasColumnType("varchar")
-                .IsRequired()
-                .HasMaxLength(100);
-
             builder.HasQueryFilter(x => !x.IsDeleted);
+
+            builder.HasOne(x => x.Position)
+                   .WithOne(e => e.Employee)
+                   .HasForeignKey<Employee>(x => x.PositionId);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Employees.Domain.Entities;
+﻿using Employees.Domain.Entities.AggregateEmployee;
 using Employees.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 

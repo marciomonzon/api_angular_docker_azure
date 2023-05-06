@@ -1,6 +1,6 @@
 ﻿using Employees.Application.Dto.Input;
 using Employees.Application.Services.Interfaces;
-using Employees.Domain.Entities;
+using Employees.Domain.Entities.AggregateEmployee;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Employees.Api.Controllers

@@ -3,6 +3,7 @@ using Employees.Application.Dto.View;
 using Employees.Application.Exceptions;
 using Employees.Application.Services.Interfaces;
 using Employees.Domain.Entities;
+using Employees.Domain.Entities.AggregateEmployee;
 using Employees.Domain.Interfaces.UoW;
 using Employees.Domain.Shared;
 
@@ -22,11 +23,11 @@ namespace Employees.Application.Services
         public async Task<bool> AddAsync(EmployeeInputDto employee)
         {
             var entitie = new Employee(employee.Name,
-                                       employee.Ocuppation,
+                                       employee.PositionId,
                                        employee.Salary,
                                        employee.DateStartCompany);
 
-            if (entitie.Invalid)
+            if (entitie.Invalid || entitie.Errors?.Count > 0)
             {
                 _notificationContext.AddNotifications(entitie.ValidationResult);
                 return false;
@@ -51,7 +52,7 @@ namespace Employees.Application.Services
                 DateCreated = employee.DateCreated,
                 DateStartCompany = employee.DateStartCompany,
                 DateLeftCompnay = employee.DateLeftCompnay,
-                Ocuppation = employee.Ocuppation
+                PositionId = employee.PositionId
             };
         }
 
@@ -71,7 +72,7 @@ namespace Employees.Application.Services
                         DateCreated = employee.DateCreated,
                         DateStartCompany = employee.DateStartCompany,
                         DateLeftCompnay = employee.DateLeftCompnay,
-                        Ocuppation = employee.Ocuppation
+                        PositionId = employee.PositionId
                     }).ToList();
         }
 
@@ -83,7 +84,7 @@ namespace Employees.Application.Services
                 throw new NotFoundException("Employee not found!");
 
             employee.UpdateEmployee(input.Name,
-                                    input.Ocuppation,
+                                    input.PositionId,
                                     input.Salary);
 
             if (employee.Invalid)

@@ -2,11 +2,16 @@
 using FluentValidation.Results;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Employees.Domain.Entities
+namespace Employees.Domain.Entities.Base
 {
-    public abstract class Entity
+    public abstract class EntityBase
     {
         public int Id { get; protected set; }
+        public DateTime DateCreated { get; private set; }
+        public bool IsDeleted { get; private set; }
+
+        [NotMapped]
+        public List<string> Errors { get; set; }
 
         [NotMapped]
         public bool Valid { get; private set; }

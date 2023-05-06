@@ -1,4 +1,4 @@
-﻿using Employees.Domain.Entities;
+﻿using Employees.Domain.Entities.AggregateEmployee;
 using FluentValidation;
 
 namespace Employees.Domain.Shared
